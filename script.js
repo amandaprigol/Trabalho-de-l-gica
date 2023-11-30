@@ -18,7 +18,6 @@ function add1() {
     console.log(total);
     sessionStorage.setItem('listaQuantidade0', listaQuantidade[0]);
     sessionStorage.setItem('produtos0', produtos[0]);
-    
 }
 
 function add2() {
