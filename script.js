@@ -160,7 +160,7 @@ function validar() {
      + sessionStorage.getItem('listaQuantidade2') + " " + nomeProdutos[2] + " gastando " + sessionStorage.getItem('produtos2') +"; "
      + sessionStorage.getItem('listaQuantidade3') + " " + nomeProdutos[3] + " gastando " + sessionStorage.getItem('produtos3') +"; "
      + sessionStorage.getItem('listaQuantidade4') + " " + nomeProdutos[4] + " gastando " + sessionStorage.getItem('produtos4') +"; "
-     + sessionStorage.getItem('listaQuantidade5') + " " + nomeProdutos[5] + " gastando " + sessionStorage.getItem('produtos5') +"; "
+     + sessionStorage.getItem('listaQuantidade5') + " " + nomeProdutos[5] + " gastando " + sessionStorage.getItem('produtos5') +". " + "(Grupo da Amanda, Karyne e Kayla)"
      
     alert(texto)
     document.getElementById("idInfo").innerHTML = texto
