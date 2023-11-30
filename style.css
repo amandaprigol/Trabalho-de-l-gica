@@ -1,0 +1,248 @@
+
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body h1 {
+    font-family: Abril Cara Gorda;
+    font-size: 40px;
+}
+
+header {
+    background-color: #79081c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    /* ou padding: 20px; */
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+nav li:hover {
+    background-color: #9b0e28;
+    padding: 8px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0,);
+    text-align: center;
+    float: left;
+    border-radius: 5px;
+}
+
+.card img {
+    max-width: 100%;
+    height: 300px;
+}
+
+.card button {
+    background-color: #295653;
+    color: #fff;
+    border:none;
+    padding: 15px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.33 ease;
+    display: inline-block;
+}
+
+.card button:hover {
+    background-color: #28494e;
+}
+
+footer {
+    background-color: #79081c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    overflow: hidden;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #777;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+}
+
+.radio-group label {
+    display: inline;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.input-check {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input-check input[type="checkbox"] + label {
+    display: inline-block;
+    font-weight: normal;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 120px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.quantidade {
+    width: 60px;
+    margin-top: 20px;
+}
+
+.preco {
+    color: #109010;
+    font-weight: bold;
+}
+
+.adicione {
+    margin-left: 850px;
+}
+
+.carrinho {
+    text-decoration: none;
+    font-size: 25px;
+    color: #f0f0f0;
+    background-color: #79081c;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding-right: 50px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 24.99%;}
+.col-4 {width: 33.32%;}
+.col-5 {width: 41.65%;}
+.col-6 {width: 49.98%;}
+.col-7 {width: 58.31%;}
+.col-8 {width: 66.64%;}
+.col-9 {width: 74.97%;}
+.col-10{width: 83.3%;}
+.col-11{width: 91.63%;}
+.col-12{width: 99.96%;}
+
+.Cadastro {
+    text-decoration: none;
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: small;
+    margin-top: 50px;
+}
+
+.Cadastro:hover {
+    background-color: #28494e;
+}
+
+

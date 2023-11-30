@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <title>Livraria</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Livraria Fantástica</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="cards">
+
+                <div class="card">                    
+                    <img src="img/19532-515x800.jpg" alt="Livro 1">
+                    <h2>Corte de Espinhos e Rosas</h2>
+                    <p>Autor: Sarah J. Maas</p>
+                    <p class="preco">R$10,00</p>
+                    <button onclick="add1()">Comprar</button>
+                    <input type="number" id="quantidade1" class="quantidade" min="0" value="0">
+                </div>
+
+                <div class="card">
+                    <img src="img/B00FACP8NC.01._SCLZZZZZZZ_SX500_.jpg" alt="Livro 2">
+                    <h2>Trono de Vidro</h2>
+                    <p>Autor: Sarah J. Maas</p>
+                    <p class="preco">R$20,00</p>
+                    <button onclick= "add2()">Comprar</button>
+                    <input type="number" id="quantidade2" class="quantidade" min="0" value="0">
+                </div>
+
+                <div class="card">
+                    <img src="img/41PHjMF81IL.jpg" alt="Livro 3">
+                    <h2>Espada de Vidro</h2>
+                    <p>Autor: Victoria Aveyard</p>
+                    <p class="preco">R$30,00</p>
+                    <button onclick= "add3()">Comprar</button>
+                    <input type="number" id="quantidade3" class="quantidade" min="0" value="0">
+                </div>
+
+                <div class="card">
+                    <img src="img/51kAYMwbQIL._SX342_BO1,204,203,200_.jpg" alt="Livro 3">
+                    <h2>A Biblioteca da Meia-Noite</h2>
+                    <p>Autor: Matt Haig</p>
+                    <p class="preco">R$40,00</p>
+                    <button onclick= "add4()">Comprar</button>
+                    <input type="number" id="quantidade4" class="quantidade" min="0" value="0">
+                </div>
+
+                <div class="card">
+                    <img src="img/B078Z42ZFQ_6ec7cb5e_cover.jpeg" alt="Livro 3">
+                    <h2>É Assim que Acaba</h2>
+                    <p>Autor: Colleen Roover</p>
+                    <p class="preco">R$50,00</p>
+                    <button onclick= "add5()">Comprar</button>
+                    <input type="number" id="quantidade5" class="quantidade" min="0" value="0">
+                </div>
+
+                <div class="card">
+                    <img src="img/51ABRx3d7GL._SX335_BO1,204,203,200_.jpg" alt="Livro 3">
+                    <h2>Verity</h2>
+                    <p>Autor: Colleen Roover</p>
+                    <p class="preco">R$60,00</p>
+                    <button onclick= "add6()">Comprar</button>
+                    <input type="number" id="quantidade6" class="quantidade" min="0" value="0">
+                </div>
+
+                <div class="adicione">
+                    <button onclick= "carrinho()" class="carrinho">Adicione ao carrinho</button>
+                </div>
+
+            </section>
+
+            <label for="total">Total a Pagar:</label>
+            <div id="idTotal"></div>
+            <br>
+            <label for="preço">Preço do Conjunto:</label>
+            <div id="pProdutos"></div>
+            <br>
+            <label for="quantidade">Quantidade de cada produto:</label>
+            <div id="qProdutos"></div>
+
+            <br>
+            <br>
+            <div class="finalizar">
+                <a class="Cadastro" href="cadastro.html">Finalizar Compra</a>
+            </div>
+            <div class="valores">
+                <button class="Cadastro" onclick="valores()">Total das suas compras no nosso site</button>
+                <div id="idTotalValores"></div>
+            </div>
+            <br>
+        </main>
+        <footer>
+            <p>&copy; 2023 Livraria Fantástica | Criado por Amanda Prigol, Karyne Furlan e Kayla Flach.</p>
+        </footer>
+    </body>
+</html>
