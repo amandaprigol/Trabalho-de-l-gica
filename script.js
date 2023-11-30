@@ -1,4 +1,4 @@
-var nomeProdutos = ["livro1", "livro2", "livro3", "livro4", "livro5", "livro6"]
+var nomeProdutos = ["Corte de Espinhos e Rosas", "Trono de Vidro", "Espada de Vidro", "A biblioteca da Meia-noite", "É Assim que Acaba", "Verity"]
 var listaQuantidade = [0,0,0,0,0,0]
 var produtos = [0,0,0,0,0,0,]
 var totalPagar = 0
