@@ -103,14 +103,9 @@ function add6() {
 function carrinho() {
 
     var totalPagar = 0
-    
+
     for (let i = 0; i < produtos.length; i++) {
         totalPagar = totalPagar + parseInt(produtos[i]);
-    }
-
-    if (totalPagar = 0){
-        alert("Selecione seus produtos!")
-        return
     }
 
     document.getElementById("idTotal").innerHTML = totalPagar;
@@ -118,7 +113,6 @@ function carrinho() {
     document.getElementById("qProdutos").innerHTML = listaQuantidade;
     sessionStorage.setItem('totalPrecos', totalPagar);
 }
-
 
 function validar() {  
 
