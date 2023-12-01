@@ -133,6 +133,11 @@ function validar() {
     }
 
     var Telefone = document.getElementById("idTelefone").value
+
+    if (!/^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/.test(Telefone)) {
+        alert("Telefone inválido!")
+        return false;
+    }
     var Cep = document.getElementById("idCEP").value
 
     if(sessionStorage.getItem('listaQuantidade0') == null){
