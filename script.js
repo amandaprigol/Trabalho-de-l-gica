@@ -114,18 +114,29 @@ function carrinho() {
     sessionStorage.setItem('totalPrecos', totalPagar);
 }
 
+document.getElementById('meuForm').addEventListener('submit', function(event) {
+    // Realizar a validação do formulário
+    if (!validar()) {
+        // Se a validação falhar, impedir o envio do formulário
+        event.preventDefault();
+    }
+});
 
 function validar() {  
 
-
-
     var Nome = document.getElementById("idNome").value
+
+    if(![aA-zZ].test(Nome)) {
+        alert("Apenas letras!")
+        return false;
+    }
+
     var Cpf = document.getElementById("idCPF").value
     var Email = document.getElementById("idEmail").value
 
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email)) {
-        alert("Email inválido")
-        return
+        alert("Email inválido!")
+        return false;
     }
 
     var Telefone = document.getElementById("idTelefone").value
