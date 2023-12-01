@@ -120,7 +120,7 @@ function validar() {
     var Nome = document.getElementById("idNome").value
 
     if (!/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\s]+$/.test(Nome)) {
-        alert("Nome inválido!")
+        alert("Nome inválido! Aceitamos apenas letras!")
         return false;
     }
 
@@ -135,7 +135,7 @@ function validar() {
     var Telefone = document.getElementById("idTelefone").value
 
     if (!/^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/.test(Telefone)) {
-        alert("Telefone inválido!")
+        alert("Telefone inválido! Preecha todos os espaços!")
         return false;
     }
     var Cep = document.getElementById("idCEP").value
