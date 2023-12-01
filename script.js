@@ -116,7 +116,21 @@ function carrinho() {
 
 
 function validar() {  
-    
+
+
+
+    var Nome = document.getElementById("idNome").value
+    var Cpf = document.getElementById("idCPF").value
+    var Email = document.getElementById("idEmail").value
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email)) {
+        alert("Email inválido")
+        return
+    }
+
+    var Telefone = document.getElementById("idTelefone").value
+    var Cep = document.getElementById("idCEP").value
+
     if(sessionStorage.getItem('listaQuantidade0') == null){
         sessionStorage.setItem('listaQuantidade0', 0)
         sessionStorage.setItem('produtos0', 0)
@@ -146,12 +160,6 @@ function validar() {
         sessionStorage.setItem('listaQuantidade5', 0)
         sessionStorage.setItem('produtos5', 0)
     }
-
-    var Nome = document.getElementById("idNome").value
-    var Cpf = document.getElementById("idCPF").value
-    var Email = document.getElementById("idEmail").value
-    var Telefone = document.getElementById("idTelefone").value
-    var Cep = document.getElementById("idCEP").value
 
     var texto = "Seu nome é: " + Nome + ", Seu CPF é: " + Cpf + ", Seu email é: " + Email + ", Seu telefone é: " + Telefone + ", Seu CEP é: " + Cep + "."
      + " Você comprou: " + sessionStorage.getItem('listaQuantidade0') + " " + nomeProdutos[0] + " gastando " + sessionStorage.getItem('produtos0') +"; "

@@ -11,36 +11,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
 
     <script>
-
         $(document).ready(function(){
             $('#idTelefone').inputmask('(99) 99999-9999')
         })
-
     </script>
 
     <script>  
-
         $(document).ready(function(){
             $('#idCPF').inputmask('999.999.999-99')
         })
-
-    </script>  
+    </script> 
 
     <script>
-
         $(document).ready(function(){
             $('#idCEP').inputmask('99999-999')
         })
-
-    </script>
-
-    <script>
-
-        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-            alert("Email inválido")
-            return
-        }
-
     </script>
 
 </head>
@@ -72,7 +57,7 @@
     
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="idEmail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <input type="email" name="email" id="idEmail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     </div>
     
                     <div class="input-container">
