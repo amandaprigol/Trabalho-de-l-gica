@@ -125,6 +125,12 @@ function validar() {
     }
 
     var Cpf = document.getElementById("idCPF").value
+
+    if (!/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/.test(Cpf)) {
+        alert("CPF inválido! Preencha todos os espaços!")
+        return false;
+    }
+
     var Email = document.getElementById("idEmail").value
 
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email)) {
@@ -139,6 +145,13 @@ function validar() {
         return false;
     }
     var Cep = document.getElementById("idCEP").value
+
+    if (!/^[0-9]{5}-[0-9]{3}$/.test(Cep)) {
+        alert("Cep inválido! Preecha todos os espaços!")
+        return false;
+    }
+
+    //Add session storages
 
     if(sessionStorage.getItem('listaQuantidade0') == null){
         sessionStorage.setItem('listaQuantidade0', 0)
