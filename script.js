@@ -114,20 +114,13 @@ function carrinho() {
     sessionStorage.setItem('totalPrecos', totalPagar);
 }
 
-document.getElementById('meuForm').addEventListener('submit', function(event) {
-    // Realizar a validação do formulário
-    if (!validar()) {
-        // Se a validação falhar, impedir o envio do formulário
-        event.preventDefault();
-    }
-});
 
 function validar() {  
 
     var Nome = document.getElementById("idNome").value
 
-    if(![aA-zZ].test(Nome)) {
-        alert("Apenas letras!")
+    if (!/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\s]+$/.test(Nome)) {
+        alert("Nome inválido!")
         return false;
     }
 
